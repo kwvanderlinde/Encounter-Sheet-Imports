@@ -1193,7 +1193,8 @@
   "Girallon Zombie": {
     "name": "Girallon Zombie",
     "source": [
-      "Tomb of Annihilation"
+	    "Tomb of Annihilation",
+	    240
     ],
     "size": "Large",
     "type": "undead",
@@ -1899,7 +1900,7 @@
       15,
       10
     ],
-    "speed": "50 ft in chosen direction",
+    "speed": "50 ft (in chosen direction)",
     "scores": [
       22,
       1,
@@ -2046,7 +2047,7 @@
       9,
       8
     ],
-    "speed": "30 ft, cl imb 20 ft",
+    "speed": "30 ft, climb 20 ft",
     "scores": [
       10,
       17,

@@ -1678,7 +1678,6 @@
           8,
           "bludgeoning"
         ],
-        "range": "All in shared area",
         "dc": true,
         "description": "Creature's in elemental's space that fail STR saving throw flung up to 20ft away in a random direction and knocked prone. If target strikes an object(ie: wall, floor) target takes 3 (1d6) bludgeoning damage for every 10 ft it was thrown. If target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone. If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone."
       }
@@ -2862,7 +2861,7 @@
       18,
       20
     ],
-    "speed": "40 ft, burrow/swim 40 ft, fly 80 ft",
+    "speed": "40 ft, burrow 40 ft., fly 80 ft, swim 40 ft",
     "scores": [
       26,
       10,
@@ -3301,7 +3300,7 @@
           6,
           "bludgeoning"
         ],
-        "range": "25/50 ft",
+        "range": "Ranged (25/50 ft)",
         "description": "One rock attack as an Attack action"
       }
     ]
@@ -4181,7 +4180,7 @@
           6,
           "slashing"
         ],
-        "range": "",
+        "range": "Melee (5 ft)",
         "description": ""
       }
     ],
@@ -5810,7 +5809,8 @@
   "Bone Naga (Spirit)": {
     "name": "Bone Naga (Spirit)",
     "source": [
-      "Monster Manual"
+	    "Monster Manual",
+	    233
     ],
     "size": "Large",
     "type": "undead",
@@ -10275,7 +10275,7 @@
           6,
           "bludgeoning"
         ],
-        "range": "",
+        "range": "Melee (5 ft)",
         "description": "With shillelagh: +4 to hit; (1d8+2) bludgeoning damage"
       }
     ],
@@ -12321,7 +12321,7 @@
       9,
       4
     ],
-    "speed": "0 ft, fly 40 ft It can hover.",
+    "speed": "0 ft, fly 40 ft (hover)",
     "scores": [
       1,
       17,
@@ -12633,7 +12633,7 @@
       5,
       6
     ],
-    "speed": "0 ft, fly 50 ft It can hover.",
+    "speed": "0 ft, fly 50 ft (hover)",
     "scores": [
       12,
       15,
@@ -13287,7 +13287,7 @@
       10,
       8
     ],
-    "speed": "0 ft, fly 40 ft It can hover.",
+    "speed": "0 ft, fly 40 ft (hover)",
     "scores": [
       7,
       13,
@@ -13479,7 +13479,7 @@
           6,
           "bludgeoning"
         ],
-        "range": "50/100 ft",
+        "range": "Ranged (50/100 ft)",
         "description": "One rock attack as an Attack action"
       }
     ]
@@ -15035,7 +15035,7 @@
           "",
           ""
         ],
-        "range": "30/60 ft",
+        "range": "Ranged (30/60 ft)",
         "description": "On a hit, the target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage)."
       }
     ],
@@ -23520,7 +23520,7 @@
           "",
           ""
         ],
-        "range": "60 ft",
+        "range": "Ranged (60 ft)",
         "description": "Wis save or frightened for 1 round; If failed by 5 or more, paralyzed as well"
       }
     ],
@@ -27084,18 +27084,6 @@
         ],
         "range": "Melee (5 ft)",
         "description": "Target makes DC 10 Con save or takes 2d4 poison damage and poisoned for 1 min (can save each turn)"
-      },
-      {
-        "name": "Scare (1/day)",
-        "ability": 6,
-        "damage": [
-          "Frightened",
-          "",
-          ""
-        ],
-        "range": "20 ft",
-        "description": "Wis save or frightened for 1 min (can save at end of each turn, disadv. if quasit is in sight)",
-        "dc": true
       }
     ],
     "traits": [
@@ -27118,7 +27106,12 @@
       {
         "name": "Invisibility",
         "description": "As an action, the quasit magically turns invisible until it attacks, or until its concentration ends (as if concentrating on a spell). Any equipment the quasit wears or carries is invisible with it."
-      }
+      },
+	    {
+		    "name": "Scare",
+		    "description": "One creature within 20 ft must succeed on a DC 10 WIS save or be frightened for 1 minute. Target can repeat the save each turn, with DIS if the quasit is within line of sight.",
+		    "dc": true
+	    }
     ]
   },
   "Quipper": {
@@ -29602,7 +29595,7 @@
           6,
           "piercing"
         ],
-        "range": "80/320 ft",
+        "range": "Ranged (80/320 ft)",
         "description": "Ammunition, two-handed"
       }
     ]
@@ -30320,27 +30313,20 @@
           "",
           "piercing"
         ],
-        "range": "40/160 ft",
+        "range": "Ranged (40/160 ft)",
         "description": "The target hit must succeed on a DC 10 Constitution saving throw or become poisoned for 1 minute. If its saving throw result is 5 or lower, the poisoned target falls unconscious for the same duration, or until it takes damage or another creature takes an action to shake it awake."
-      },
-      {
-        "name": "Heart Sight",
-        "ability": 6,
-        "damage": [
-          "Reveal",
-          "",
-          ""
-        ],
-        "range": "Touch (5 ft)",
-        "description": "Cha save or sprite knows emotional state and alignment (celestial/fiend/undead auto fail the save)",
-        "dc": true
       }
     ],
     "actions": [
       {
         "name": "Invisibility",
         "description": "As an action, the sprite magically turns invisible until it attacks or casts a spell, or until its concentration ends (as if concentrating on a spell). Any equipment the sprite wears or carries is invisible with it."
-      }
+      },
+	    {
+		    "name": "Heart Sight",
+		    "description": "Touches a creature and magically knows its emotional state. If target fails DC 10 CHA save, it also knows its alignment (celestial/fiend/undead auto fail the save)",
+		    "dc": true
+	    }
     ]
   },
   "Spy": {
@@ -34062,7 +34048,6 @@
           8,
           "bludgeoning"
         ],
-        "range": "All in shared area",
         "description": [
           "Each creature in the elemental's space that is Large or smaller, is also grappled (escape DC 14). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw is successful, the target is pushed out of the elemental's space.",
           "The elemental can grapple one Large creature or up to two Medium or smaller creatures at one time. At the start of each of the elemental's turns, each target grappled by it takes 13 (2d8+4) bludgeoning damage. A creature within 5 ft of the elemental can pull a creature or object out of it by taking an action to make a DC 14 Strength and succeeding."
@@ -34842,7 +34827,7 @@
           8,
           "piercing"
         ],
-        "range": "150/600 ft",
+        "range": "Ranged (150/600 ft)",
         "description": "Ammunition, heavy, two-handed)"
       }
     ],

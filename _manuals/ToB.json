@@ -172,7 +172,7 @@
       18,
       12
     ],
-    "speed": "40 ft, climb 40 ft, Earth Glide",
+    "speed": "40 ft, climb 40 ft, burrow 40 ft (Earth Glide)",
     "scores": [
       26,
       12,
@@ -592,7 +592,7 @@
       10,
       10
     ],
-    "speed": "30 ft, swim 30 ft, burrow (snow, ice) 30 ft",
+    "speed": "30 ft, swim 30 ft, burrow 30 ft (snow/ice)",
     "scores": [
       20,
       14,
@@ -11740,7 +11740,7 @@
       9,
       6
     ],
-    "speed": "10 ft, fly, 60 ft",
+    "speed": "10 ft, fly 60 ft",
     "scores": [
       10,
       16,
@@ -13319,14 +13319,25 @@
     "challenge_rating": "3",
     "attacks": [
       {
-        "name": "Antler Glaive",
+        "name": "Antler Glaive (Short)",
         "ability": 2,
         "damage": [
           1,
           10,
           ""
         ],
-        "range": "Melee (5 or 10 ft)",
+        "range": "Melee (5 ft)",
+        "description": "Target must make a successful DC 13 Strength saving throw or either be disarmed or fall prone; the attacking far darrig chooses which effect occurs."
+      },
+      {
+        "name": "Antler Glaive (Long)",
+        "ability": 2,
+        "damage": [
+          1,
+          10,
+          ""
+        ],
+        "range": "Melee (10 ft)",
         "description": "Target must make a successful DC 13 Strength saving throw or either be disarmed or fall prone; the attacking far darrig chooses which effect occurs."
       }
     ],
@@ -14598,7 +14609,7 @@
       9,
       8
     ],
-    "speed": "10 ft, fly (varies; see Windborne ability)",
+    "speed": "10 ft, fly 10 ft (Windborne)",
     "scores": [
       20,
       20,
@@ -16002,7 +16013,6 @@
           4,
           "bludgeoning"
         ],
-        "range": "Grappled",
         "description": "One creature already grappled takes bludgeoning damage above plus 7 (2d6) poison damage, or half as much poison damage with a successful DC 11 Constitution saving throw."
       }
     ],
@@ -24845,7 +24855,7 @@
       15,
       8
     ],
-    "speed": "20 ft, fly 80 ft (hover).",
+    "speed": "20 ft, fly 80 ft (hover)",
     "scores": [
       12,
       17,
@@ -27110,7 +27120,7 @@
       6,
       8
     ],
-    "speed": "30 ft, swim 30 ft, burrow (snow, ice) 20 ft",
+    "speed": "30 ft, swim 30 ft, burrow 20 ft (snow/ice)",
     "scores": [
       16,
       12,
